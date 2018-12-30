@@ -824,6 +824,9 @@ async def embed(ctx, *args):
     color = discord.Color((r << 16) + (g << 8) + b)
     await client.send_message(ctx.message.channel, embed=Embed(color = color, description=text))
     await client.delete_message(ctx.message)
+@client.command(pass_context=True)
+async def buy():
+            await client.say('create ticket to buy lives at cheap rate by using command -new')
 
 
 client.run(os.getenv('Token'))
