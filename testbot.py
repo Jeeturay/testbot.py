@@ -19,7 +19,7 @@ client.remove_command('help')
 
 async def status_task():
     while True:
-        await client.change_presence(game=discord.Game(name='with /help & SR.LIVE STORE  '))
+        await client.change_presence(game=discord.Game(name='with /help & SR.LIVES STORE  '))
         await asyncio.sleep(5)
         await client.change_presence(game=discord.Game(name='with '+str(len(set(client.get_all_members())))+' users'))
         await asyncio.sleep(5)
@@ -322,8 +322,8 @@ async def warn(ctx, userName: discord.User, *, message:str):
 
 @client.command(pass_context=True)
 async def ownerinfo(ctx):
-    embed = discord.Embed(title="Information about owner", description="Bot Name- MR.CHETAN", color=0x00ff00)
-    embed.set_footer(text="Copyright@UK Soft")
+    embed = discord.Embed(title="Information about owner", description="Bot Name- SR.LIVES STORE", color=0x00ff00)
+    embed.set_footer(text="Team **__SR.HACKER HUB")
     embed.set_author(name=" Bot OwnerName- @S🅰🈂ℹL ®🅰N🅰 {DEVELOPER}#8333,")
     embed.add_field(name="Site- https://discord.gg/fcPYEJg", value="Thanks for adding our bot", inline=True)
     await client.say(embed=embed)
