@@ -19,7 +19,7 @@ client.remove_command('help')
 
 async def status_task():
     while True:
-        await client.change_presence(game=discord.Game(name='with /help and sahil team '))
+        await client.change_presence(game=discord.Game(name='with /help & SR.LIVE STORE  '))
         await asyncio.sleep(5)
         await client.change_presence(game=discord.Game(name='with '+str(len(set(client.get_all_members())))+' users'))
         await asyncio.sleep(5)
@@ -826,7 +826,7 @@ async def embed(ctx, *args):
     await client.delete_message(ctx.message)
 @client.command(pass_context=True)
 async def buy():
-           await client.say('create a new ticket `-new` ')
+           await client.say('thanks for buying')
 
 
 client.run(os.getenv('Token'))
