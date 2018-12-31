@@ -826,7 +826,17 @@ async def embed(ctx, *args):
     await client.delete_message(ctx.message)
 @client.command(pass_context=True)
 async def buy():
-           await client.say('thanks for buying')
+           await client.say('Hello {user} !
+Thank you for using this command !
+
+Please keep in mind that you can cancel this process at any time with / cancel .
+
+You can check our current prices in the #rate-info channel !
+
+What do you want to buy !
+Instant points or deluxe !
+
+Just write it to me smiley ')
 
 
 client.run(os.getenv('Token'))
