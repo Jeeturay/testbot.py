@@ -25,7 +25,7 @@ async def status_task():
         await asyncio.sleep(5)
         await client.change_presence(game=discord.Game(name='in '+str(len(client.servers))+' servers'))
         await asyncio.sleep(5)
-        await client.change_presence(game=discord.Game!name='with Loco & HQ & BAZZINOW'))
+        await client.change_presence(game=discord.Game(hiname='with Loco & HQ & BAZZINOW'))
         await asyncio.sleep(5)
 
 @client.event
