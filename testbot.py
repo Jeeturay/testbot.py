@@ -827,7 +827,7 @@ async def embed(ctx, *args):
     await client.delete_message(ctx.message)
 @client.command(pass_context=True)
 async def buy():
-           await client.say('{user} Thanks for using this command , but you can only buy points from our main server . Type /help for more information .')
+           await client.say('" + member.name + "Thanks for using this command , but you can only buy points from our main server . Type /help for more information .')
 
 
 client.run(os.getenv('Token'))
