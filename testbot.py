@@ -325,7 +325,7 @@ async def ownerinfo(ctx):
     embed = discord.Embed(title="Information about owner", description="Bot Name- SR.LIVES STORE", color=0x00ff00)
     embed.set_footer(text="Team. SR.HACKER HUB")
 
-    embed.set_author(name=" Bot OwnerName- @S🅰🈂ℹL ®🅰N🅰 {DEVELOPER}#8333,")
+    embed.set_author(name=" Bot OwnerName- @S🅰🈂ℹL ®🅰N🅰 {DEVELOPER}#8333")
     embed.add_field(name="Site- https://discordapp.com/api/oauth2/authorize?client_id=508868117661745153&permissions=8&scope=bot", value="Thanks for adding our bot", inline=True)
     await client.say(embed=embed)
     
@@ -827,7 +827,7 @@ async def embed(ctx, *args):
     await client.delete_message(ctx.message)
 @client.command(pass_context=True)
 async def buy():
-           await client.say('Thanks for buying')
+           await client.say('{user} Thanks for using this command , but you can only buy points from our main server . Type /help for more information .')
 
 
 client.run(os.getenv('Token'))
