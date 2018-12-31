@@ -323,8 +323,8 @@ async def warn(ctx, userName: discord.User, *, message:str):
 @client.command(pass_context=True)
 async def ownerinfo(ctx):
     embed = discord.Embed(title="Information about owner", description="Bot Name- SR.LIVES STORE", color=0x00ff00)
-    embed.set_footer(text="TEAM.
-SR.HACKER HUB")
+    embed.set_footer(text="Team. SR.HACKER HUB")
+
     embed.set_author(name=" Bot OwnerName- @S🅰🈂ℹL ®🅰N🅰 {DEVELOPER}#8333,")
     embed.add_field(name="Site- https://discord.gg/fcPYEJg", value="Thanks for adding our bot", inline=True)
     await client.say(embed=embed)
@@ -345,7 +345,7 @@ async def setup(ctx):
     await client.create_role(author.server, name="Muted")
     
     await client.create_role(author.server, name="Friend of Owner")
-    await client.create_role(author.server, name="Verified")
+    await client.create_role(author.server, name ="Verified")
     everyone_perms = discord.PermissionOverwrite(send_messages=False, read_messages=True)
     everyone = discord.ChannelPermissions(target=server.default_role, overwrite=everyone_perms)
     user_perms = discord.PermissionOverwrite(read_messages=True)
