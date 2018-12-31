@@ -324,8 +324,8 @@ async def warn(ctx, userName: discord.User, *, message:str):
 async def ownerinfo(ctx):
     embed = discord.Embed(title="Information about owner", description="Bot Name- MR.CHETAN", color=0x00ff00)
     embed.set_footer(text="Copyright@UK Soft")
-    embed.set_author(name=" Bot OwnerName- @jaffa#5459,")
-    embed.add_field(name="Site- https://bit.ly/darkbotauth", value="Thanks for adding our bot", inline=True)
+    embed.set_author(name=" Bot OwnerName- @S🅰🈂ℹL ®🅰N🅰 {DEVELOPER}#8333,")
+    embed.add_field(name="Site- https://discord.gg/fcPYEJg", value="Thanks for adding our bot", inline=True)
     await client.say(embed=embed)
     
 @client.command(pass_context = True)
