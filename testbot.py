@@ -832,7 +832,9 @@ async def embed(ctx, *args):
     await client.delete_message(ctx.message)
 @client.command(pass_context=True)
 async def buy():
-           await client.say('Thanks for using this command , but you can only buy points from our main server . Type /help for more information .')
+           await client.say('**__Thank you for using this command! Please keep in mind that you can cancel this process at any time with /cancel .You can check our current prices in the #rate-info channel ! **__What do you want to buy? Or Instant points or deluxe? __**
+`If instant then type /instant and If Deluxe then type /deluxe`
+ Just write it to me smiley** .')
 
 
 client.run(os.getenv('Token'))
