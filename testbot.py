@@ -323,7 +323,7 @@ async def warn(ctx, userName: discord.User, *, message:str):
 @client.command(pass_context=True)
 async def ownerinfo(ctx):
     embed = discord.Embed(title="Information about owner", description="Bot Name- SR.LIVES STORE", color=0x00ff00)
-    embed.set_footer(text="Team. SR.HACKER HUB")
+    embed.set_footer(text="©SR.LIVES STORE Made with ❤️ by ▀▄▀▄▀▄[ RI▀█▀esh]▄▀▄▀▄▀#2150.")
 
     embed.set_author(name=" Bot OwnerName- @S🅰🈂ℹL ®🅰N🅰 {DEVELOPER}#8333")
     embed.add_field(name="Site- https://discordapp.com/api/oauth2/authorize?client_id=508868117661745153&permissions=8&scope=bot", value="Thanks for adding our bot", inline=True)
@@ -420,6 +420,7 @@ async def help(ctx):
     embed.add_field(name = '``Our Help Server Link`` ',value ='https://discord.gg/pCWy7PU',inline = False)
     embed.add_field(name = '/modhelp ',value ='Explaines all the commands which are only usable by Those who has moderation permissions. Like- Manage Nicknames, Manage Messages, Kick/Ban Members,etc.',inline = False)
     embed.add_field(name = '/generalhelp ',value ='Explaines all the commands which are usable by everyone.',inline = False)
+    embed.add_field(name = '/srliveshelp ',value ='Explaines all the commands which are usable by lives store.',inline = False)
     await client.send_message(author,embed=embed)
     await client.say('📨 Check DMs For Information')
 @client.command(pass_context = True)
