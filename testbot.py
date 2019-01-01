@@ -832,6 +832,19 @@ async def embed(ctx, *args):
     color = discord.Color((r << 16) + (g << 8) + b)
     await client.send_message(ctx.message.channel, embed=Embed(color = color, description=text))
     await client.delete_message(ctx.message)
+
+@client.event
+async def on_member_join(member):
+  channel = client.get_channel("***")
+  msg = "Welcome {}".format(member.mention)
+  await client.send_message(channel, msg)
+
+@client.event
+async def on_member_remove(member):
+  channel = client.get_channel("***")
+  msg = "Goodbye {}".format(member.mention)
+  await client.send_message(channel, msg) 
+
 @client.command(pass_context=True)
 async def buy():
            await client.say('Thank you for using this command ! Please keep in mind that you can cancel this process at any time with /cancel .You can check our current prices in the #rate-info channel! What do you want to buy? Or Instant points or deluxe?  Just write it to me smiley .')
