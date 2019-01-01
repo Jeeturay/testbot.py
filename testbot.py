@@ -840,6 +840,6 @@ async def instant():
            await client.say('By buying this points you can generate all trivia lives without a phone number in just one second! Pricing for instant points:1 point = 4 loco life / 1 point = 4 brain bazzi life / 1 point = 1 hq Life / 1 point = 4 SWOO life  .  @ You can send your lives to as many different HQ Trivia accounts as you want, as long as you have enough points left. Under 100 lives: 12 rs each Equal or over 100 lives: 10 rs each ! How many points do you want?  Please type /want.')
 @client.command(pass_context=True)
 async def want():
-           await client.say('Ok relaxed️ , your rate will keep multiple by 12rs /point if less then 100 / if more then then 10rs /point . Is that okay for you?? If okay then  Please type /ok.')
+           await client.say('Ok.')
 	
 	client.run(os.getenv('Token'))
