@@ -454,7 +454,11 @@ async def modhelp(ctx):
     embed.add_field(name = '/getuser(Kick members Permission Required) ',value ='Use it like ``/getuser @rolename`` to get list of all users having a particular role',inline = False)
     await client.send_message(author,embed=embed)
     await client.say('📨 Check DMs For Information')
-
+@client.command(pass_context = True)
+async def srliveshelp(ctx):
+    author = ctx.message.author
+    r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
+	
 @client.command(pass_context = True)
 async def generalhelp(ctx):
     author = ctx.message.author
