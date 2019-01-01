@@ -835,6 +835,8 @@ async def embed(ctx, *args):
 @client.command(pass_context=True)
 async def buy():
            await client.say('Thank you for using this command ! Please keep in mind that you can cancel this process at any time with /cancel .You can check our current prices in the #rate-info channel! What do you want to buy? Or Instant points or deluxe?  Just write it to me smiley .')
-
+@client.command(pass_context=True)
+async def instant():
+	
 
 client.run(os.getenv('Token'))
