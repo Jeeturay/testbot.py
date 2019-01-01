@@ -323,7 +323,7 @@ async def warn(ctx, userName: discord.User, *, message:str):
 @client.command(pass_context=True)
 async def ownerinfo(ctx):
     embed = discord.Embed(title="Information about owner", description="Bot Name- SR.LIVES STORE", color=0x00ff00)
-    embed.set_footer(text="©SR.LIVES STORE Made with ❤️ by ▀▄▀▄▀▄[ RI▀█▀esh]▄▀▄▀▄▀#2150.")
+    embed.set_footer(text="©SR.LIVES STORE Made with ❤️ by S🅰🈂ℹL ®🅰N🅰#8333.")
 
     embed.set_author(name=" Bot OwnerName- @S🅰🈂ℹL ®🅰N🅰 {DEVELOPER}#8333")
     embed.add_field(name="Site- https://discordapp.com/api/oauth2/authorize?client_id=508868117661745153&permissions=8&scope=bot", value="Thanks for adding our bot", inline=True)
