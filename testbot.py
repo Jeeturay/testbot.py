@@ -13,7 +13,7 @@ from discord import Game, Embed, Color, Status, ChannelType
 
 
 Forbidden= discord.Embed(title="Permission Denied", description="1) Please check whether you have permission to perform this action or not. \n2) Please check whether my role has permission to perform this action in this channel or not. \n3) Please check my role position.", color=0x00ff00)
-client = Bot(description="MR.CHETAN Bot is best", command_prefix="/", pm_help = True)
+client = Bot(description="SAHIL RANA Bot is best", command_prefix="/", pm_help = True)
 client.remove_command('help')
 
 
@@ -33,8 +33,8 @@ async def on_ready():
     print('Logged in as '+client.user.name+' (ID:'+client.user.id+') | Connected to '+str(len(client.servers))+' servers | Connected to '+str(len(set(client.get_all_members())))+' users')
     print('--------')
     print('--------')
-    print('Started MR.CHETAN BOT')
-    print('Created by CHETAN')
+    print('Started SAHIL RANA BOT')
+    print('Created by SAHIL RANA')
     client.loop.create_task(status_task())
 
 
@@ -74,7 +74,7 @@ async def on_member_join(member):
     embed.set_image(url = 'https://media.giphy.com/media/OkJat1YNdoD3W/giphy.gif')
     await client.send_message(member,embed=embed)
     print("Sent message to " + member.name)
-    channel = discord.utils.get(client.get_all_channels(), server__name='AVENGERS 2.0', name='MR CHETANbot-servers-join-leave-log')
+    channel = discord.utils.get(client.get_all_channels(), server__name='SR.LIVES STORE', name='SAHIL RANAbot-servers-join-leave-log')
     r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
     embed = discord.Embed(title=f'Welcome {member.name} to {member.server.name}', description='Do not forget to check <#474572305192845312> and never try to break any one of them', color = discord.Color((r << 16) + (g << 8) + b))
     embed.add_field(name='__Thanks for joining__', value='**Hope you will be active here.**', inline=True)
