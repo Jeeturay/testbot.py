@@ -847,6 +847,6 @@ async def on_member_remove(member):
 
 @client.command(pass_context=True)
 async def buy():
-           await client.say(' Hello bro Thanks for using buy command , **__BUT YOU CAN ONLY BUY POINTS IN OUR OFFICIAL SERVER__** **if u are already in your official lives store server then proceed your buying process by typing /buy points** (*type /help for more information*).')
+           await client.say(' Hello '+user.name+' Thanks for using buy command , **__BUT YOU CAN ONLY BUY POINTS IN OUR OFFICIAL SERVER__** **if u are already in your official lives store server then proceed your buying process by typing /buy points** (*type /help for more information*).')
 
-		
+client.run(os.getenv('Token'))		
