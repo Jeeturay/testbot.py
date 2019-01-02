@@ -852,17 +852,17 @@ async def buy():
 async def buypoints():
            await client.say(' "Hello @S🅰🈂ℹL ®🅰N🅰 !
                               "Thank you for using this command!
-                              "
+                              "👇
                               "Please keep in mind that you can cancel this process at any time with !cancel .
-                              "
+                              "👇
                               "You can check our current prices in the #get-lives channel!
-                              "
+                              "👇
                               "What do you want to buy?
                               "Instant points or deluxe?
-                              "
+                              "👇
                               "If instant then type !instant
                               "If Deluxe then type !deluxe
-                              "
+                              "👍
                               "Just write it to me ..!!.')
 
 client.run(os.getenv('Token'))
