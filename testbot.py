@@ -883,19 +883,6 @@ BrainBaazi: 9673
         MajorityRules: 30
 JumpTV: Infinite
 TimeTrivia: 19 .')
-@client.command(pass_context=True)
-async def s():
-	       await client.say('SR.Lives stock:
-ALL TRIVIA:
-    Automatic: 325  
-    Erasers: Infinite
-    Trivaa: 19331
-Loco: 50996
-Swoo: 69
-BrainBaazi: 9673
-        Out Of Tune: 71
-        MajorityRules: 30
-JumpTV: Infinite
-TimeTrivia: 19 .')
+
      	       	       	 	       	       
 client.run(os.getenv('Token'))		
