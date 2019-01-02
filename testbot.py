@@ -845,5 +845,9 @@ async def buy():
 @client.command(pass_context=True)
 async def buypoints():
            await client.say(' **Thank you for using this command !** Please keep in mind that you can cancel this process at any time with ***`/cancel`*** . You can check our current prices in the #rate-info channel !  **__What do you want to buy__** **Instant points or deluxe?** If instant then type ***`/instant`*** if :gem: then type ***`/deluxe`*** . Just write it to me :smiley: .')
-			    
+@client.command(pass_context=True)
+async def buypoints():
+           await client.say('  @client.command(pass_context=True)
+async def buypoints():
+           await client.say(' 			    
 client.run(os.getenv('Token'))		
