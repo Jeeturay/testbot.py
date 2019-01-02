@@ -849,6 +849,6 @@ async def buypoints():
 async def instant():
            await client.say(' With these points you can generate all trivia lives without a phone number in just one second ! **Pricing for instant points:** 
 `1 point = 4 loco life / 1 point = 4 brain bazzi life / 1 point = 1 hq Life / 1 point = 4 SWOO life`
-  *Under 100 lives: 12 rs each . Equal or over 100 lives: 10 rs each* **__How many points do you want !__** **Please type** *`/want <amount>`* .')
+  *Under 100 lives: 12 rs each . Equal or over 100 lives: 10 rs each* **__How many points do you want ! __** **Please type** *`/want <amount>`* .')
             			    
 client.run(os.getenv('Token'))		
