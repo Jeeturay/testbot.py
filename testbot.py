@@ -871,6 +871,6 @@ asyns def p():
 	       await client.say('you have ```0```point left..!! .')
 @client.command(pass_context=True)
 asyns def stock():
-	       await client.say('SR.Lives stock: **__LOCO = 19708 , BAZZINOW= 10087, HQ=8727__**
+	       await client.say('SR.Lives stock: **__LOCO = 19708 , BAZZINOW= 10087, HQ=8727__** .')
      	       	       	 	       	       
 client.run(os.getenv('Token'))		
