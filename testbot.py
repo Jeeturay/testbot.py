@@ -850,20 +850,22 @@ async def buy():
            await client.say(' Hello bro Thanks for using buy command , **__BUT YOU CAN ONLY BUY POINTS IN OUR OFFICIAL SERVER__** **if u are already in your official lives store server then proceed your buying process by typing /buy points** (*type /help for more information*).')
 @client.command(pass_context=True)
 async def buypoints():
-           await client.say(' "Hello @S🅰🈂ℹL ®🅰N🅰 !
+           await client.say(' "Hello (mention.user) !
                               "Thank you for using this command!
-                              "👇
+                              "
                               "Please keep in mind that you can cancel this process at any time with !cancel .
-                              "👇
+                              "
                               "You can check our current prices in the #get-lives channel!
-                              "👇
+                              "
                               "What do you want to buy?
                               "Instant points or deluxe?
-                              "👇
-                              "If instant then type !instant
-                              "If Deluxe then type !deluxe
-                              "👍
+                              "
+                              "**__If instant then type `!instant`
+                              "If Deluxe then type `!deluxe`__**
+                              "
                               "Just write it to me ..!!.')
+          await client.send_message(author,embed=embed)
+    await client.say('📨 Check DMs For Information')
 
-client.run(os.getenv('Token'))
+			client.run(os.getenv('Token'))
 
