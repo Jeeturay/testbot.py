@@ -853,13 +853,13 @@ async def deluxe():
 	       await client.say(' **You get daily points with the DELUXEgem option! You can use points to generate HQ lives without a phone number! Current price: amount per day in $ per week** *(For example:__**) 1 life per day --> 7 lives per week --> 63rs / $0.9/week ! 5 lives per day --> 35 lives per week --> 315rs / 4.5$/week ! 10 lives per day --> 70 lives per week --> 630rs /  9$/week* **__How many points do you want per day?__** **Please write it as** `!get <number>` .')		
 @client.command(pass_context=True)
 async def cancel():
-	       await client.say('')
+	       await client.say('hlo.')
 @client.command(pass_context=True)
 async def srhelp():
-	       await client.say('')
+	       await client.say('hi.')
 @client.command(pass_context=True)
 async def want():
-	       await client.say('')
+	       await client.say('Hello.')
 @client.command(pass_context=True)
 async def point():
 	       await client.say('you have ```0``` point left..!! .')
