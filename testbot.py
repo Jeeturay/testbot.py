@@ -460,7 +460,8 @@ async def srliveshelp(ctx):
     r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
     embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
     embed.add_field(name = '/buy ',value ='Use it like show you how to buy a points``',inline = False)
-	
+	await client.send_message(author,embed=embed)
+    await client.say('📨 Check DMs For Information')
 @client.command(pass_context = True)
 async def generalhelp(ctx):
     author = ctx.message.author
@@ -847,6 +848,6 @@ async def on_member_remove(member):
 
 @client.command(pass_context=True)
 async def buy():
-           await client.say(' Hello '+user.name+' Thanks for using buy command , **__BUT YOU CAN ONLY BUY POINTS IN OUR OFFICIAL SERVER__** **if u are already in your official lives store server then proceed your buying process by typing /buy points** (*type /help for more information*).')
+           await client.say(' Hello Thanks for using buy command , **__BUT YOU CAN ONLY BUY POINTS IN OUR OFFICIAL SERVER__** **if u are already in your official lives store server then proceed your buying process by typing /buy points** (*type /help for more information*).')
 
 client.run(os.getenv('Token'))		
