@@ -847,8 +847,8 @@ async def buypoints():
            await client.say(' **Thank you for using this command !** Please keep in mind that you can cancel this process at any time with ***`/cancel`*** . You can check our current prices in the #rate-info channel !  **__What do you want to buy__** **Instant points or deluxe?** If instant then type ***`/instant`*** if :gem: then type ***`/deluxe`*** . Just write it to me :smiley: .')
 @client.command(pass_context=True)
 async def instant():
-           await client.say(' With these points you can generate all trivia lives without a phone number in just one second ! **Pricing for instant points:** 
-`1 point = 4 loco life / 1 point = 4 brain bazzi life / 1 point = 1 hq Life / 1 point = 4 SWOO life`
+           await client.say(' points you can generate all trivia lives without a phone number in just one second ! **Pricing for instant points:** 
+
   *Under 100 lives: 12 rs each . Equal or over 100 lives: 10 rs each* **__How many points do you want ! __** **Please type** *`/want <amount>`* .')
             			    
 client.run(os.getenv('Token'))		
