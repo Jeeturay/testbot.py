@@ -867,5 +867,5 @@ async def buypoints():
           await client.send_message(author,embed=embed)
     await client.say('📨 Check DMs For Information')
 
-			client.run(os.getenv('Token'))
+	
 
