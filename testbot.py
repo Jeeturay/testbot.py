@@ -858,7 +858,7 @@ async def buypoints():
                               "Instant points or deluxe?
                               "If instant then type /instant
                               "If Deluxe then type /deluxe
-                              "Just write it to me smiley.
+                              "Just write it to me smiley.')
           await client.send_message(author,embed=embed)
     await client.say('📨 Check DMs For Information')
 
