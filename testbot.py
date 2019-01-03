@@ -853,24 +853,24 @@ async def deluxe():
 	       await client.say(' **You get daily points with the DELUXEgem option! You can use points to generate HQ lives without a phone number! Current price: amount per day in $ per week** *(For example:__**) 1 life per day --> 7 lives per week --> 63rs / $0.9/week ! 5 lives per day --> 35 lives per week --> 315rs / 4.5$/week ! 10 lives per day --> 70 lives per week --> 630rs /  9$/week* **__How many points do you want per day?__** **Please write it as** `!get <number>` .')		
 @client.command(pass_context=True)
 async def cancel():
-	       await client.say('')
+	       await client.say('you prosec was cancel .')
 @client.command(pass_context=True)
 async def srhelp():
-	       await client.say('')
+	       await client.say('hlo .')
 @client.command(pass_context=True)
 async def want():
-	       await client.say('')
+	       await client.say('bro your choise .')
 @client.command(pass_context=True)
 async def point():
 	       await client.say('you have ```0``` point left..!! .')
 @client.command(pass_context=True)
 async def points():
-	       await client.say('you have ```0```point left..!! .')
+	       await client.say('you have ```0```point left..!! so buy more points .')
 @client.command(pass_context=True)
 asyns def p():
 	       await client.say('you have ```0```point left..!! .')
 @client.command(pass_context=True)
 asyns def stock():
-	       await client.say('SR.Lives stock: **__LOCO = 19708 , BAZZINOW= 10087, HQ=8727__**
+	       await client.say(' Loco unlimited lives .')
      	       	       	 	       	       
 client.run(os.getenv('Token'))		
