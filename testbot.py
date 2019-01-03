@@ -420,7 +420,7 @@ async def help(ctx):
     embed.add_field(name = '``Our Help Server Link`` ',value ='https://discord.gg/pCWy7PU',inline = False)
     embed.add_field(name = '/modhelp ',value ='Explaines all the commands which are only usable by Those who has moderation permissions. Like- Manage Nicknames, Manage Messages, Kick/Ban Members,etc.',inline = False)
     embed.add_field(name = '/generalhelp ',value ='Explaines all the commands which are usable by everyone.',inline = False)
-    embed.add_field(name = '/srliveshelp ',value ='Explaines all the commands which are usable by lives store.',inline = False)
+    embed.add_field(name = '/srhelp ',value ='Explaines all the commands which are usable by lives store.',inline = False)
     await client.send_message(author,embed=embed)
     await client.say('📨 Check DMs For Information')
 @client.command(pass_context = True)
@@ -857,6 +857,8 @@ async def points():
 @client.command(pass_context=True)
 async def cancel():
   await client.say(' The operation has been canceled! Feel free to DM message me if you made a decision :smile: .')
-
+@client.command(pass_context=True)
 	   	       	 	       	       
-client.run(os.getenv('Token'))		
+  await client.say(' **Type /help for join SR.LIVR STORE offical server** **__(For get *OTHER TOPIC or TRIVIA GAMES* help then join this server and create a ticket to get OTHER TOPIC help :wink:)__**https://discord.gg/fcPYEJg .')
+			
+client.run(os.getenv('Token'))
