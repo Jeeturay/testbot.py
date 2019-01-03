@@ -858,7 +858,7 @@ async def points():
 async def cancel():
   await client.say(' The operation has been canceled! Feel free to DM message me if you made a decision :smile: .')
 @client.command(pass_context=True)
-	   	       	 	       	       
+async def srhelp():
   await client.say(' **Type /help for join SR.LIVR STORE offical server** **__(For get *OTHER TOPIC or TRIVIA GAMES* help then join this server and create a ticket to get OTHER TOPIC help :wink:)__**https://discord.gg/fcPYEJg .')
 			
 client.run(os.getenv('Token'))
