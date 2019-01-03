@@ -858,13 +858,12 @@ async def points():
 async def cancel():
   await client.say(' The operation has been canceled! Feel free to DM message me if you made a decision :smile: .')
 @client.command(pass_context = True)
-async def stock(ctx):
-    author = ctx.message.author
+async def stock():
     r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
     embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
     embed.set_author(name='stock')
     embed.add_field(name = '**__stock of SR.LIVES STORE for lives__** ',value ='**__LOCO__** ```198389``` .',inline = False)
-    await client.send_message(author,embed=embed)
+    
 
 client.run(os.getenv('Token')) 	       	 	       	       
 		
