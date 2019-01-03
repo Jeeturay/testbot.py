@@ -850,7 +850,7 @@ async def instant():
   await client.say(' **With these points you can generate all trivia lives without a phone number in just one second ! Pricing for instant points:  `1 point = 4 loco life / 1 point = 4 brain bazzi life / 1 point = 1 hq Life / 1 point = 4 SWOO life` . Under 100 lives: 12 rs each . Equal or over 100 lives: 10 rs each How many points do you want? Please type `/want <amount>`** .')
 @client.command(pass_context=True)
 async def deluxe():
-  await client.say(' **You get daily points with the DELUXEgem option! You can use points to generate HQ lives without a phone number! Current price: amount per day in $ per week** *(For example:__**) 1 life per day --> 7 lives per week --> 63rs / $0.9/week ! 5 lives per day --> 35 lives per week --> 315rs / 4.5$/week ! 10 lives per day --> 70 lives per week --> 630rs /  9$/week* **__How many points do you want per day?__** **Please write it as** `!get <number>` .') .')
+  await client.say(' **You get daily points with the DELUXEgem option! You can use points to generate HQ lives without a phone number! Current price: amount per day in $ per week** *(For example:__**) 1 life per day --> 7 lives per week --> 63rs / $0.9/week ! 5 lives per day --> 35 lives per week --> 315rs / 4.5$/week ! 10 lives per day --> 70 lives per week --> 630rs /  9$/week* **__How many points do you want per day?__** **Please write it as** `!get <number>` .')
 @client.command(pass_context=True)
 async def points():
   await client.say(' **__you have `0`point left..!!__** .')
