@@ -844,7 +844,7 @@ async def buy():
   await client.say(' Thanks for using buy command , **__BUT YOU CAN ONLY BUY POINTS IN OUR OFFICIAL SERVER__** **if u are already in your official lives store server then proceed your buying process by typing `/buypoints`** (*type `/srhelp` for more information*).')
 @client.command(pass_context=True)
 async def buypoints():
-  await client.say(' **Thank you for using this command !** Please keep in mind that you can cancel this process at any time with ***`/cancel`*** . You can check our current prices in the #rate-info channel !  **__What do you want to buy__** **Instant points or deluxe?** If instant then type ***`/instant`*** if Deluxe:gem: then type ***`/deluxe`*** . Just write it to me :smiley: .')
+  await client.say(' **Thank you for using this command !** Please keep in mind that you can cancel this process at any time with ***`/cancel`*** . You can check our current prices in the #rate-info channel !  **__What do you want to buy__** **Instant points or deluxe?** If instant then type ***`/instant`*** if :gem: then type ***`/deluxe`*** . Just write it to me :smiley: .')
 @client.command(pass_context=True)
 async def instant():
   await client.say(' **With these points you can generate all trivia lives without a phone number in just one second ! Pricing for instant points:  `1 point = 4 loco life / 1 point = 4 brain bazzi life / 1 point = 1 hq Life / 1 point = 4 SWOO life` . Under 100 lives: 12 rs each . Equal or over 100 lives: 10 rs each How many points do you want? Please type `/want <amount>`** .')
@@ -857,13 +857,19 @@ async def points():
 @client.command(pass_context=True)
 async def cancel():
   await client.say(' The operation has been canceled! Feel free to DM message me if you made a decision :smile: .')
-@client.command(pass_context = True)
-async def stock():
-    r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
-    embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
-    embed.set_author(name='stock')
-    embed.add_field(name = '**__stock of SR.LIVES STORE for lives__** ',value ='**__LOCO__** ```198389``` .',inline = False)
-    await client.say(' **__LOCO__**' ```10000``` .')
-
-client.run(os.getenv('Token')) 	       	 	       	       
-		
+@client.command(pass_context=True)
+async stock(ctx):
+  channel = ctx.message.channel
+  embed = discord.Embed(
+      title = '**__stock of SR.LIVES STORE for lives__**',
+      description = 'SHOW LIVES STOCK.',
+      colour = discord.colour.blue()
+  )
+	  
+	  
+	  
+	  
+	  
+	  
+	   	       	 	       	       
+client.run(os.getenv('Token'))		
