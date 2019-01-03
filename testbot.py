@@ -863,7 +863,7 @@ async def stock():
     embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
     embed.set_author(name='stock')
     embed.add_field(name = '**__stock of SR.LIVES STORE for lives__** ',value ='**__LOCO__** ```198389``` .',inline = False)
-    await client.say(' '**__SR.LIVE STOCK__**' '**__LOCO__**' ```10000``` .')
+    await client.say(' **__LOCO__**' ```10000``` .')
 
 client.run(os.getenv('Token')) 	       	 	       	       
 		
