@@ -857,19 +857,6 @@ async def points():
 @client.command(pass_context=True)
 async def cancel():
   await client.say(' The operation has been canceled! Feel free to DM message me if you made a decision :smile: .')
-@client.command(pass_context=True)
-async stock(ctx):
-  channel = ctx.message.channel
-  embed = discord.Embed(
-      title = '**__stock of SR.LIVES STORE for lives__**',
-      description = 'SHOW LIVES STOCK.',
-      colour = discord.colour.blue()
-  )
-	  
-	  
-	  
-	  
-	  
-	  
+
 	   	       	 	       	       
 client.run(os.getenv('Token'))		
