@@ -866,4 +866,5 @@ async def get():
 async def week():
 	       await client.say(' Ok relaxed️ , **The current rate of Deluxe :gem: is 9rs /point** *So your amount will be × by rate of point* .  **__Is that okay for you__**?? *If okay then  Please type `/ok`* .')        	       	       	           	       	       	 	       	       
 
-client.run(os.getenv('Token'))				
+
+client.run(os.getenv('Token'))						
