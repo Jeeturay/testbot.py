@@ -854,6 +854,9 @@ async def deluxe():
 @client.command(pass_context=True)
 async def points():
   await client.say(' **__you have ```0```point left..!!__** .')
+@client.command(pass_context=True)
+async def cancel():
+  await client.say(' The operation has been canceled! Feel free to DM message me if you made a decision :smile: .')
 
 client.run(os.getenv('Token')) 	       	 	       	       
 		
