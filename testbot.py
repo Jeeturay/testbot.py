@@ -853,18 +853,5 @@ async def deluxe():
  @client.command(pass_context=True)
  async def points():
  	       await client.say('you have ```0```point left..!! .')
-@client.command(pass_context=True)
-async def want():
-	       await client.say(' Ok relaxed️ , **The Rate Of /points Is 12rs** so your point will be × by rate of points . **__Is that okay for you??__**  *If okay then  Please type !`/ok`* .')
-@client.command(pass_context=True)
-async def ok():
-	       await client.say(' **How will you be paying today? We currently accept**: **__`Paypal, PayTM`__** . *If you live in India, please consider using PayTM* .')
-@client.command(pass_context=True)
-async def get():
-	       await client.say(' **__For how many weeks do you want your daily points? Please type__** **__`!week <amount>`__** .')
-@client.command(pass_context=True)
-async def week():
-	       await client.say(' Ok relaxed️ , **The current rate of Deluxe :gem: is 9rs /point** *So your amount will be × by rate of point* .  **__Is that okay for you__**?? *If okay then  Please type `/ok`* .')        	       	       	           	       	       	 	       	       
-
 
 client.run(os.getenv('Token'))						
