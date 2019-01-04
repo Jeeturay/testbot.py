@@ -326,7 +326,7 @@ async def ownerinfo(ctx):
     embed.set_footer(text="©SR.LIVES STORE Made with ❤️ by S🅰🈂ℹL ®🅰N🅰#8333.")
 
     embed.set_author(name=" Bot OwnerName- @S🅰🈂ℹL ®🅰N🅰 {DEVELOPER}#8333")
-    embed.add_field(name="Site- https://discordapp.com/api/oauth2/authorize?client_id=508868117661745153&permissions=8&scope=bot", value="Thanks for adding our bot", inline=True)
+    embed.add_field(name="Site- https://discord.gg/YDp7TtC", value="Join this server more details", inline=True)
     await client.say(embed=embed)
     
 @client.command(pass_context = True)
