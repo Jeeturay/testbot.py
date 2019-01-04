@@ -849,5 +849,18 @@ async def instant():
 @client.command(pass_context=True)	
 async def deluxe():
 	       await client.say(' **You get daily points with the DELUXE :gem: option! You can use points to generate HQ lives without a phone number! Current price: amount per day in $ per week** *(For example:__**) 1 life per day --> 7 lives per week --> 63rs / $0.9/week ! 5 lives per day --> 35 lives per week --> 315rs / 4.5$/week ! 10 lives per day --> 70 lives per week --> 630rs /  9$/week* **__How many points do you want per day?__** **Please write it as** `!get <number>` .')
+@clientclient.command(pass_context=True)
+async def want():
+	       await client.say(' Ok relaxed️ , **The Rate Of /points Is 12rs** so your point will be × by rate of points . **__Is that okay for you??__**  *If okay then  Please type !`/ok`* .')
+@client.command(pass_context=True)
+async def ok():
+	       await client.say(' **How will you be paying today? We currently accept**: **__`Paypal, PayTM`__** . *If you live in India, please consider using PayTM* .')
+@client.command(pass_context=True)
+async def get():
+	       await client.say(' **__For how many weeks do you want your daily points? Please type__** **__`!week <amount>`__** .')
+@client.command(pass_context=True)
+async def week():
+	       await client.say(' Ok relaxed️ , **The current rate of Deluxe :gem: is 9rs /point** *So your amount will be × by rate of point* .  **__Is that okay for you__**?? *If okay then  Please type `/ok`* .')
 
-client.run(os.getenv('Token'))						
+client.run(os.getenv('Token'))		
+
