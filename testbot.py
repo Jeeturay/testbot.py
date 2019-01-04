@@ -13,13 +13,13 @@ from discord import Game, Embed, Color, Status, ChannelType
 
 
 Forbidden= discord.Embed(title="Permission Denied", description="1) Please check whether you have permission to perform this action or not. \n2) Please check whether my role has permission to perform this action in this channel or not. \n3) Please check my role position.", color=0x00ff00)
-client = Bot(description="SAHIL RANA Bot is best", command_prefix="₹", pm_help = True)
+client = Bot(description="SAHIL RANA Bot is best", command_prefix="@", pm_help = True)
 client.remove_command('help')
 
 
 async def status_task():
     while True:
-        await client.change_presence(game=discord.Game(name='with SR.LIVE | ₹help '))
+        await client.change_presence(game=discord.Game(name='with SR.LIVE | @help '))
         await asyncio.sleep(5)
         await client.change_presence(game=discord.Game(name='with '+str(len(set(client.get_all_members())))+' users'))
         await asyncio.sleep(5)
@@ -839,22 +839,28 @@ async def on_member_remove(member):
   await client.send_message(channel, msg) 
 @client.command(pass_context=True)
 async def buy():
-           await client.say(' Thanks for using buy command , **__BUT YOU CAN ONLY BUY POINTS IN OUR OFFICIAL SERVER__** **if u are already in your official lives store server then proceed your buying process by typing `₹buypoints`** (*type `₹srhelp` for more information*).')
+           await client.say(' Thanks for using buy command , **__BUT YOU CAN ONLY BUY POINTS IN OUR OFFICIAL SERVER__** **if u are already in your official lives store server then proceed your buying process by typing `@buypoints`** (*type `@srhelp` for more information*).')
 @client.command(pass_context=True)
 async def buypoints():
-           await client.say(' **Thank you for using this command !** Please keep in mind that you can cancel this process at any time with ***`₹cancel`*** . You can check our current prices in the #rate-info channel !  **__What do you want to buy__** **Instant points or deluxe?** If instant then type ***`₹instant`*** if :gem: then type ***`₹deluxe`*** . Just write it to me :smiley: .')
+           await client.say(' **Thank you for using this command !** Please keep in mind that you can cancel this process at any time with ***`@cancel`*** . You can check our current prices in the #rate-info channel !  **__What do you want to buy__** **Instant points or deluxe?** If instant then type ***`@instant`*** if :gem: then type ***`@deluxe`*** . Just write it to me :smiley: .')
 @client.command(pass_context=True)
 async def instant():
-           await client.say(' **With these points you can generate all trivia lives without a phone number in just one second ! Pricing for instant points:  `1 point = 4 loco life / 1 point = 4 brain bazzi life / 1 point = 1 hq Life / 1 point = 4 SWOO life` . Under 100 lives: 12 rs each . Equal or over 100 lives: 10 rs each How many points do you want? Please type `₹want <amount>`** .')
+           await client.say(' **With these points you can generate all trivia lives without a phone number in just one second ! Pricing for instant points:  `1 point = 4 loco life / 1 point = 4 brain bazzi life / 1 point = 1 hq Life / 1 point = 4 SWOO life` . Under 100 lives: 12 rs each . Equal or over 100 lives: 10 rs each How many points do you want? Please type `@want <amount>`** .')
 @client.command(pass_context=True)	
 async def deluxe():
-	       await client.say(' **You get daily points with the DELUXE :gem: option! You can use points to generate HQ lives without a phone number! Current price: amount per day in $ per week** *(For example:__**) 1 life per day --> 7 lives per week --> 63rs / $0.9/week ! 5 lives per day --> 35 lives per week --> 315rs / 4.5$/week ! 10 lives per day --> 70 lives per week --> 630rs /  9$/week* **__How many points do you want per day?__** **Please write it as** `₹get <number>` .')
+	       await client.say(' **You get daily points with the DELUXE :gem: option! You can use points to generate HQ lives without a phone number! Current price: amount per day in $ per week** *(For example:__**) 1 life per day --> 7 lives per week --> 63rs / $0.9/week ! 5 lives per day --> 35 lives per week --> 315rs / 4.5$/week ! 10 lives per day --> 70 lives per week --> 630rs /  9$/week* **__How many points do you want per day?__** **Please write it as** `@get <number>` .')
 @client.command(pass_context=True)	
 async def want():
-	       await client.say(' Ok relaxed️ , **The Rate Of /points Is 12rs** so your point will be × by rate of points . **__Is that okay for you?__**  *If okay then  Please type !`₹ok`* .')
+	       await client.say(' Ok relaxed️ , **The Rate Of /points Is 12rs** so your point will be × by rate of points . **__Is that okay for you?__**  *If okay then  Please type !`@ok`* .')
 @client.command(pass_context=True)	
 async def get():
-	       await client.say(' **__For how many weeks do you want your daily points? Please type__** **__`₹week <amount>`__** .')
+	       await client.say(' **__For how many weeks do you want your daily points? Please type__** **__`@week <amount>`__** .')
+@client.command(pass_context=True)	
+async def ok():
+	       await client.say(' **How will you be paying today? We currently accept**: **__`Paypal, PayTM`__** ```please type using @``` . *If you live in India, please consider using PayTM*. .')
+@client.command(pass_context=True)	
+async def ok():
+	       await client.say(' **__YOU HAVE ```0``` POINTS LEFT *```Type @buypoints to get some points```*
 		
 client.run(os.getenv('Token'))		
 
