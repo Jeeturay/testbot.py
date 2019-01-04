@@ -859,8 +859,8 @@ async def get():
 async def ok():
 	       await client.say(' **How will you be paying today? We currently accept**: **__`Paypal, PayTM`__** ```please type using @``` . *If you live in India, please consider using PayTM*. .')
 @client.command(pass_context=True)	
-async def ok():
-	       await client.say(' **__YOU HAVE ```0``` POINTS LEFT *```Type @buypoints to get some points```*
+async def points():
+	       await client.say(' **__YOU HAVE ```0``` POINTS LEFT *```Type @buypoints to get some points```* .')
 		
 client.run(os.getenv('Token'))		
 
