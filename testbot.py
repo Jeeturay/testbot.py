@@ -867,7 +867,7 @@ async def on(ctx):
     embed.set_footer(text="©SR.LIVES STORE Made with ❤️ by S🅰🈂ℹL ®🅰N🅰#8333.")
 
     embed.set_author(name="SR.LIVES STORE Stock")
-    embed.add_field(name="", value="Join this server more details", inline=True)
+    embed.add_field(name="Loco Lives", value="34628", inline=True)
     await client.say(embed=embed)
 		
 client.run(os.getenv('Token'))		
