@@ -872,11 +872,5 @@ async def stock(ctx):
     embed.add_field(name="HQ Lives", value="2197", inline=True)
     embed.add_field(name="Swoo Lives", value="967", inline=True)	
     await client.say(embed=embed)	
-@client.command(pass_context=True)	
-async def paytm():
-	       await client.say(' Ok 😉 , **__Here is your one time link:__** https://p-y.tm/MRuH-T0 to pay. **You'll get your order automatically once the payment is successful** 😃 *I'll write you right here then.* .') 	
-@client.command(pass_context=True)
-async def paypal():
-	       await client.say(' Ok wink , Here is your one time link: https://www.paypal.me/itssahilrana?ppid=PPC000654&cnac=IN&rsta=en_IN(en_C2)&cust=M4JTADDGDZ7JC&unptid=32e08f5c-7c31-11e8-858e-5cb90192ce30&t=&cal=784bc59969444&calc=784bc59969444&calf=784bc59969444&unp_tpcid=ppme-social-business-profile-created&page=main:email&pgrp=main:email&e=op&mchn=em&s=ci&mail=sys pay. You'll get your order automatically once the payment is successfulsmiley I'll write you right here then. ')  
 
 client.run(os.getenv('Token'))		
