@@ -871,7 +871,7 @@ async def stock(ctx):
     embed.add_field(name="Bazzi Now Lives", value="23421", inline=True)
     embed.add_field(name="HQ Lives", value="2199", inline=True)
 	
-	await client.say(embed=embed)
+	
 		
 client.run(os.getenv('Token'))		
 
