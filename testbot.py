@@ -863,11 +863,11 @@ async def points():
 	       await client.say(' '+user.name+' **__YOU HAVE__** ```0``` POINTS LEFT *```Type @buypoints to get some points```* .')
 @client.command(pass_context=True)
 async def on(ctx):
-    embed = discord.Embed(title="Information about owner", description="Bot Name- SR.LIVES STORE", color=0x00ff00)
+    embed = discord.Embed(title="Available Stock", description="Bot Name- SR.LIVES STORE", color=0x00ff00)
     embed.set_footer(text="©SR.LIVES STORE Made with ❤️ by S🅰🈂ℹL ®🅰N🅰#8333.")
 
-    embed.set_author(name=" Bot OwnerName- @S🅰🈂ℹL ®🅰N🅰 {DEVELOPER}#8333")
-    embed.add_field(name="Site- https://discord.gg/YDp7TtC", value="Join this server more details", inline=True)
+    embed.set_author(name="SR.LIVES STORE Stock")
+    embed.add_field(name="", value="Join this server more details", inline=True)
     await client.say(embed=embed)
 		
 client.run(os.getenv('Token'))		
