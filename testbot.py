@@ -875,5 +875,8 @@ async def stock(ctx):
 @client.command(pass_context=True)	
 async def week():
 	       await client.say('**__Tje price of /deluxe💎point is 10rs . So your amount will be × by rate or /point__** . Is that okay for you . *If okay then write it to me as `@ok`*.')
-	
+@client.command(pass_context=True)	
+async def paytm():
+	       await client.say('**Ok** 😉 , **__Here is your one time link__**: https://p-y.tm/MRuH-T0 to pay. **You'll get your order automatically once the payment is successful**😃 *Must send your oayment screenshot in #sr-live-store-payment-proof (IN SR.LIVE STORE) otherwise your point will not get added* ```To join SR.LIVESTORE type @help```.')
+		
 client.run(os.getenv('Token'))		
