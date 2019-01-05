@@ -869,8 +869,8 @@ async def stock(ctx):
     embed.set_author(name="SR.LIVES STORE Stock")
     embed.add_field(name="Loco Lives", value="34628", inline=True)
     embed.add_field(name="Bazzi Now Lives", value="23421", inline=True)
-    embed.add_field(name="HQ Lives", value="2199", inline=True)
-	
+    embed.add_field(name="HQ Lives", value="2197", inline=True)
+    embed.add_field(name="Swoo Lives", value="967", inline=True)	
     await client.say(embed=embed)	
 		
 client.run(os.getenv('Token'))		
