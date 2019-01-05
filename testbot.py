@@ -486,7 +486,7 @@ async def generalhelp(ctx):
 async def kick(ctx,user:discord.Member):
 
     if user.server_permissions.kick_members:
-        await client.say('**He is mod/admin and i am unable to kick him/her**')
+        await client.say('**🚫Uhhhhhhh🤫🤫, Your role is not high enough to kick this member🤭🤫🤠**.')
         return
     
     try:
