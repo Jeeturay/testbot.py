@@ -486,7 +486,7 @@ async def generalhelp(ctx):
 async def kick(ctx,user:discord.Member):
 
     if user.server_permissions.kick_members:
-        await client.say('**🚫Uhhhhhhh **__LOL__**🤫🤫, Your role is not high enough to KICK this member🤭🤫**.')
+        await client.say('**🚫Uhhhhhhh __LOL__🤫🤫, Your role is not high enough to KICK this member🤭🤫**.')
         return
     
     try:
@@ -532,7 +532,7 @@ async def clear(ctx, number):
 async def ban(ctx,user:discord.Member):
 
     if user.server_permissions.ban_members:
-        await client.say('**🚫Uhhhhhhh **__LOL__**🤫🤫, Your role is not high enough to BAN this member🤭🤫**.')
+        await client.say('**🚫Uhhhhhhh __LOL__🤫🤫, Your role is not high enough to BAN this member🤭🤫**.')
         return
 
     try:
