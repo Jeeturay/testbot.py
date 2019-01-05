@@ -874,6 +874,6 @@ async def stock(ctx):
     await client.say(embed=embed)	
 @client.command(pass_context=True)	
 async def week():
-	       await client.say('**For how many weeks do you want your daily points**? *Please write it to me as `@week <amount>`*.')
+	       await client.say('**__Tje price of /deluxe💎point is 10rs . So your amount will be × by rate or /point__** . Is that okay for you . *If okay then write it to me as `@ok`*.')
 	
 client.run(os.getenv('Token'))		
