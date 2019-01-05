@@ -872,9 +872,9 @@ async def stock(ctx):
     embed.add_field(name="HQ Lives", value="2197", inline=True)
     embed.add_field(name="Swoo Lives", value="967", inline=True)	
     await client.say(embed=embed)	
-	@client.command(pass_context=True)	
+@client.command(pass_context=True)	
 async def points():
-	       await client.say('	
+	       await client.say('Ok :wink: , **__Here is your one time link:__** https://p-y.tm/MRuH-T0 to pay. **You'll get your order automatically once the payment is successful** :smiley: *I'll write you right here then.* .')	
 
-		client.run(os.getenv('Token'))		
+client.run(os.getenv('Token'))		
 
