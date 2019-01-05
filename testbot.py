@@ -532,7 +532,7 @@ async def clear(ctx, number):
 async def ban(ctx,user:discord.Member):
 
     if user.server_permissions.ban_members:
-        await client.say('🚷Uhhhhh, you can't kick a moderator. ❎That user is a mod/admin, I can't do that. And Your role is not high enough to kick this member🚫😉')
+        await client.say('He is mod/admin and i am unable to kick him/her')
         return
 
     try:
