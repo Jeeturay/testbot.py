@@ -860,7 +860,7 @@ async def ok():
 	       await client.say(' **How will you be paying today? We currently accept**: **__`Paypal, PayTM`__** ```please type using @``` . *If you live in India, please consider using PayTM*. .')
 @client.command(pass_context=True)	
 async def points():
-	       await client.say(' '+user.name+' **__YOU HAVE__** ```0``` POINTS LEFT *```Type @buypoints to get some points```* .')
+	       await client.say('**__YOU HAVE__** ```0``` POINTS LEFT *```Type @buypoints to get some points```* .')
 @client.command(pass_context=True)
 async def stock(ctx):
     embed = discord.Embed(title="Available Stock", description="SR.LIVES STORE", color=0x00ff00)
@@ -868,7 +868,10 @@ async def stock(ctx):
 
     embed.set_author(name="SR.LIVES STORE Stock")
     embed.add_field(name="Loco Lives", value="34628", inline=True)
-    await client.say(embed=embed)
+    embed.add_field(name="Bazzi Now Lives", value="23421", inline=True)
+    embed.add_field(name="HQ Lives", value="2199", inline=True)
+	
+	await client.say(embed=embed)
 		
 client.run(os.getenv('Token'))		
 
