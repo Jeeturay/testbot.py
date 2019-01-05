@@ -872,6 +872,9 @@ async def stock(ctx):
     embed.add_field(name="HQ Lives", value="2197", inline=True)
     embed.add_field(name="Swoo Lives", value="967", inline=True)	
     await client.say(embed=embed)	
-		
-client.run(os.getenv('Token'))		
+	@client.command(pass_context=True)	
+async def points():
+	       await client.say('	
+
+		client.run(os.getenv('Token'))		
 
