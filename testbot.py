@@ -872,5 +872,8 @@ async def stock(ctx):
     embed.add_field(name="HQ Lives", value="2197", inline=True)
     embed.add_field(name="Swoo Lives", value="967", inline=True)	
     await client.say(embed=embed)	
-
+@client.command(pass_context=True)	
+async def week():
+	       await client.say('**For how many weeks do you want your daily points**? *Please write it to me as `@week <amount>`*.')
+	
 client.run(os.getenv('Token'))		
