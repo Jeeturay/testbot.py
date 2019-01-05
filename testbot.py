@@ -486,7 +486,7 @@ async def generalhelp(ctx):
 async def kick(ctx,user:discord.Member):
 
     if user.server_permissions.kick_members:
-        await client.say('**🚫Uhhhhhhh🤫🤫, Your role is not high enough to kick this member🤭🤫🤠**.')
+        await client.say('**🚫Uhhhhhhh **__LOL__**🤫🤫, Your role is not high enough to KICK this member🤭🤫**.')
         return
     
     try:
@@ -532,7 +532,7 @@ async def clear(ctx, number):
 async def ban(ctx,user:discord.Member):
 
     if user.server_permissions.ban_members:
-        await client.say('He is mod/admin and i am unable to kick him/her')
+        await client.say('**🚫Uhhhhhhh **__LOL__**🤫🤫, Your role is not high enough to BAN this member🤭🤫**.')
         return
 
     try:
@@ -861,7 +861,14 @@ async def ok():
 @client.command(pass_context=True)	
 async def points():
 	       await client.say(' '+user.name+' **__YOU HAVE__** ```0``` POINTS LEFT *```Type @buypoints to get some points```* .')
+@client.command(pass_context=True)
+async def stock(ctx):
+    embed = discord.Embed(title="Available Stock", description="SR.LIVES STORE", color=0x00ff00)
+    embed.set_footer(text="©SR.LIVES STORE Made with ❤️ by S🅰🈂ℹL ®🅰N🅰#8333.")
 
+    embed.set_author(name="SR.LIVES STORE Stock")
+    embed.add_field(name="Loco Lives", value="34628", inline=True)
+    await client.say(embed=embed)
 		
 client.run(os.getenv('Token'))		
 
