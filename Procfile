@@ -1,1 +1,1 @@
-worker: python srlivesstore.py
+worker: python srlivestore.py
