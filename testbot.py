@@ -877,7 +877,7 @@ async def week():
 	       await client.say('**__The price of /deluxe💎point is 10rs . So your amount will be × by rate or /point__** . Is that okay for you . *If okay then write it to me as `@ok`*.')
 @client.command(pass_context=True)	
 async def paytm():
-	       await client.say('Ok😉,**__HERE IS YOUR ONE TIME LINK:__** https://p-y.tm/MRuH-T0 to pay! You will get your order automatically once the payment is successful :smiley: `Must send you screenshot in #sr-live-store-payment-proof` *Otherwise your points will not get added in your account* 😉 .')
+	       await client.say('Ok😉,**__HERE IS YOUR ONE TIME LINK:__** https://p-y.tm/MRuH-T0 to pay! You will get your order automatically once the payment is successful :smiley: **__Must send you screenshot in #sr-live-store-payment-proof in SR.LIVE STORE__** *Otherwise your points will not get added in your account* **__To join SR.LIVE STORE type `@help`__**😉 .')
 @client.command(pass_context=True)	
 async def loco():
 	       await client.say('Ok wait , @SR.LIVES STORE#6418 need some verification about your point .(🔎verifying🔍).')
