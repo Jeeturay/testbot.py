@@ -417,7 +417,7 @@ async def help(ctx):
     embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
     embed.set_author(name='Help')
     embed.set_image(url = 'https://image.ibb.co/caM2BK/help.gif')
-    embed.add_field(name = '``Our Help Server Link`` ',value ='https://discord.gg/pCWy7PU',inline = False)
+    embed.add_field(name = '``Our Help Server Link`` ',value ='https://discord.gg/ukzuZrS',inline = False)
     embed.add_field(name = '@modhelp ',value ='Explaines all the commands which are only usable by Those who has moderation permissions. Like- Manage Nicknames, Manage Messages, Kick/Ban Members,etc.',inline = False)
     embed.add_field(name = '@generalhelp ',value ='Explaines all the commands which are usable by everyone.',inline = False)
     embed.add_field(name = '@srliveshelp ',value ='Explaines all the commands which are usable by lives store.',inline = False)
@@ -879,7 +879,7 @@ async def week():
 async def paytm():
 	       await client.say('Ok😉,**__HERE IS YOUR ONE TIME LINK:__** https://p-y.tm/MRuH-T0 to pay! You will get your order automatically once the payment is successful :smiley: **__Must send you screenshot in #sr-live-store-payment-proof in SR.LIVE STORE__** *Otherwise your points will not get added in your account* **__To join SR.LIVE STORE type `@help`__**😉 .')
 @client.command(pass_context=True)	
-async def loco():
+async def paytm():
 	       await client.say('Ok wait , @SR.LIVES STORE#6418 need some verification about your point .(🔎verifying🔍).')
 		
 client.run(os.getenv('Token'))		
