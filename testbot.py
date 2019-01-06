@@ -883,6 +883,9 @@ async def loco():
 	       await client.say('Ok wait , @SR.LIVES STORE#6418 need some verification about your point .(🔎verifying🔍).')
 @client.command(pass_context=True)	
 async def cancel():
-	       await client.say('Ok :-(☞▄︻̷̿┻̿═━一 , your request has been cancelled successful:relaxed️:.')
+	       await client.say('**Ok :-(☞▄︻̷̿┻̿═━一 , your request has been cancelled successful**☺️.')
+@client.command(pass_context=True)	
+async def paypal():
+	       await client.say('**__Ok 😉 , Here is your one time link__**: https://www.paypal.me/itssahilrana?ppid=PPC000654&cnac=IN&rsta=en_IN(en_C2)&cust=M4JTADDGDZ7JC&unptid=32e08f5c-7c31-11e8-858e-5cb90192ce30&t=&cal=784bc59969444&calc=784bc59969444&calf=784bc59969444&unp_tpcid=ppme-social-business-profile-created&page=main:email&pgrp=main:email&e=op&mchn=em&s=ci&mail=sys pay. **You will get your order automatically once the payment is successfulsmiley** *Must send your payment screenshot in sr-live-store-payment-proof in SR.LIVE STORE* otherwise your points will not get added in your account (**__To join SR.LIVE STORE type `@help`__**.')
 		
 client.run(os.getenv('Token'))		
