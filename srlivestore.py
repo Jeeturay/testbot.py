@@ -839,25 +839,25 @@ async def on_member_remove(member):
   await client.send_message(channel, msg) 
 @client.command(pass_context=True)
 async def buy():
-           await client.say(' Thanks for using buy command , **__BUT YOU CAN ONLY BUY POINTS IN OUR OFFICIAL SERVER__** **if u are already in your official lives store server then proceed your buying process by typing `@buypoints`** (*type `@help` for more information*).')
+           await client.say(ctx.message.author.mention+'Thanks for using buy command , **__BUT YOU CAN ONLY BUY POINTS IN OUR OFFICIAL SERVER__** **if u are already in your official lives store server then proceed your buying process by typing `@buypoints`** (*type `@help` for more information*).')
 @client.command(pass_context=True)
 async def buypoints():
-           await client.say(' **Thank you for using this command !** Please keep in mind that you can cancel this process at any time with ***`@cancel`*** . You can check our current prices in the #rate-info channel !  **__What do you want to buy__** **Instant points or deluxe?** If instant then type ***`@instant`*** if Deluxe:gem: then type ***`@deluxe`*** . Just write it to me :smiley: .')
+           await client.say(ctx.message.author.mention+'**Thank you for using this command !** Please keep in mind that you can cancel this process at any time with ***`@cancel`*** . You can check our current prices in the #rate-info channel !  **__What do you want to buy__** **Instant points or deluxe?** If instant then type ***`@instant`*** if Deluxe:gem: then type ***`@deluxe`*** . Just write it to me :smiley: .')
 @client.command(pass_context=True)
 async def instant():
-           await client.say(' **With these points you can generate all trivia lives without a phone number in just one second ! Pricing for instant points:  `1 point = 4 loco life / 1 point = 4 brain bazzi life / 1 point = 1 hq Life / 1 point = 4 SWOO life` . Under 100 lives: 12 rs each . Equal or over 100 lives: 10 rs each How many points do you want? Please type `@want <amount>`** .')
+           await client.say(ctx.message.author.mention+'**With these points you can generate all trivia lives without a phone number in just one second ! Pricing for instant points:  `1 point = 4 loco life / 1 point = 4 brain bazzi life / 1 point = 1 hq Life / 1 point = 4 SWOO life` . Under 100 lives: 12 rs each . Equal or over 100 lives: 10 rs each How many points do you want? Please type `@want <amount>`** .')
 @client.command(pass_context=True)	
 async def deluxe():
-	       await client.say(' **You get daily points with the DELUXE :gem: option! You can use points to generate HQ lives without a phone number! Current price: amount per day in $ per week** *(For example:__**) 1 life per day --> 7 lives per week --> 63rs / $0.9/week ! 5 lives per day --> 35 lives per week --> 315rs / 4.5$/week ! 10 lives per day --> 70 lives per week --> 630rs /  9$/week* **__How many points do you want per day?__** **Please write it as** `@get <number>` .')
+	       await client.say(ctx.message.author.mention+'**You get daily points with the DELUXE :gem: option! You can use points to generate HQ lives without a phone number! Current price: amount per day in $ per week** *(For example:__**) 1 life per day --> 7 lives per week --> 63rs / $0.9/week ! 5 lives per day --> 35 lives per week --> 315rs / 4.5$/week ! 10 lives per day --> 70 lives per week --> 630rs /  9$/week* **__How many points do you want per day?__** **Please write it as** `@get <number>` .')
 @client.command(pass_context=True)	
 async def want():
-	       await client.say(' Ok relaxed️ , **The Rate Of /points Is 12rs** so your point will be × by rate of points . **__Is that okay for you?__**  *If okay then  Please type !`@ok`* .')
+	       await client.say(ctx.message.author.mention+'Ok relaxed️ , **The Rate Of /points Is 12rs** so your point will be × by rate of points . **__Is that okay for you?__**  *If okay then  Please type !`@ok`* .')
 @client.command(pass_context=True)	
 async def get():
-	       await client.say(' **__For how many weeks do you want your daily points? Please type__** **__`@week <amount>`__** .')
+	       await client.say(ctx.message.author.mention+'**__For how many weeks do you want your daily points? Please type__** **__`@week <amount>`__** .')
 @client.command(pass_context=True)	
 async def ok():
-	       await client.say(' **How will you be paying today? We currently accept**: **__`Paypal, PayTM`__** ```please type using @``` . *If you live in India, please consider using PayTM*. .')
+	       await client.say(ctx.message.author.mention+'**How will you be paying today? We currently accept**: **__`Paypal, PayTM`__** ```please type using @``` . *If you live in India, please consider using PayTM*. .')
 @client.command(pass_context=True)	
 async def points():
 	       await client.say('**__YOU HAVE__** ```0``` POINTS LEFT *```Type @buypoints to get some points```* .')
@@ -867,25 +867,25 @@ async def stock(ctx):
     embed.set_footer(text="©SR.LIVES STORE Made with ❤️ by S🅰🈂ℹL ®🅰N🅰#8333.")
 
     embed.set_author(name="SR.LIVES STORE Stock")
-    embed.add_field(name="Loco Lives", value="34628", inline=True)
-    embed.add_field(name="Bazzi Now Lives", value="23421", inline=True)
-    embed.add_field(name="HQ Lives", value="2197", inline=True)
-    embed.add_field(name="Swoo Lives", value="967", inline=True)	
+    embed.add_field(name="Loco Lives", value="6872", inline=True)
+    embed.add_field(name="Bazzi Now Lives", value="678", inline=True)
+    embed.add_field(name="HQ Lives", value="227", inline=True)
+    embed.add_field(name="Swoo Lives", value="87", inline=True)	
     await client.say(embed=embed)	
 @client.command(pass_context=True)	
 async def week():
-	       await client.say('**__The price of /deluxe💎point is 10rs . So your amount will be × by rate or /point__** . Is that okay for you . *If okay then write it to me as `@ok`*.')
+	       await client.say(ctx.message.author.mention+'**__The price of /deluxe💎point is 10rs . So your amount will be × by rate or /point__** . Is that okay for you . *If okay then write it to me as `@ok`*.')
 @client.command(pass_context=True)	
 async def paytm():
-	       await client.say('Ok😉,**__HERE IS YOUR ONE TIME LINK:__** https://p-y.tm/MRuH-T0 to pay! You will get your order automatically once the payment is successful :smiley: **__Must send you screenshot in #sr-live-store-payment-proof in SR.LIVE STORE__** *Otherwise your points will not get added in your account* **__To join SR.LIVE STORE type `@help`__**😉 .')
+	       await client.say(ctx.message.author.mention+'Ok😉,**__HERE IS YOUR ONE TIME LINK:__** https://p-y.tm/MRuH-T0 to pay! You will get your order automatically once the payment is successful :smiley: **__Must send you screenshot in #sr-live-store-payment-proof in SR.LIVE STORE__** *Otherwise your points will not get added in your account* **__To join SR.LIVE STORE type `@help`__**😉 .')
 @client.command(pass_context=True)	
 async def loco():
-	       await client.say('Ok wait , @SR.LIVES STORE#6418 need some verification about your point .(🔎verifying🔍).')
+	       await client.say(ctx.message.author.mention+'Ok wait , @SR.LIVES STORE#6418 need some verification about your point .(🔎verifying🔍).')
 @client.command(pass_context=True)	
 async def cancel():
-	       await client.say('**Ok :-(☞▄︻̷̿┻̿═━一 , your request has been cancelled successful**☺️.')
+	       await client.say(ctx.message.author.mention+'**Ok :-(☞▄︻̷̿┻̿═━一 , your request has been cancelled successful**☺️.')
 @client.command(pass_context=True)	
 async def paypal():
-	       await client.say('**__Ok 😉 , Here is your one time link__**: https://www.paypal.me/itssahilrana?ppid=PPC000654&cnac=IN&rsta=en_IN(en_C2)&cust=M4JTADDGDZ7JC&unptid=32e08f5c-7c31-11e8-858e-5cb90192ce30&t=&cal=784bc59969444&calc=784bc59969444&calf=784bc59969444&unp_tpcid=ppme-social-business-profile-created&page=main:email&pgrp=main:email&e=op&mchn=em&s=ci&mail=sys pay. **You will get your order automatically once the payment is successfulsmiley** *Must send your payment screenshot in sr-live-store-payment-proof in SR.LIVE STORE* otherwise your points will not get added in your account (**__To join SR.LIVE STORE type `@help`__**.')
+	       await client.say(ctx.message.author.mention+'**__Ok 😉 , Here is your one time link__**: https://www.paypal.me/itssahilrana?ppid=PPC000654&cnac=IN&rsta=en_IN(en_C2)&cust=M4JTADDGDZ7JC&unptid=32e08f5c-7c31-11e8-858e-5cb90192ce30&t=&cal=784bc59969444&calc=784bc59969444&calf=784bc59969444&unp_tpcid=ppme-social-business-profile-created&page=main:email&pgrp=main:email&e=op&mchn=em&s=ci&mail=sys pay. **You will get your order automatically once the payment is successfulsmiley** *Must send your payment screenshot in sr-live-store-payment-proof in SR.LIVE STORE* otherwise your points will not get added in your account (**__To join SR.LIVE STORE type `@help`__**.')
 
 client.run(os.getenv('Token'))
