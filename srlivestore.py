@@ -422,7 +422,7 @@ async def help(ctx):
     embed.add_field(name = '@generalhelp ',value ='Explaines all the commands which are usable by everyone.',inline = False)
     embed.add_field(name = '@srliveshelp ',value ='Explaines all the commands which are usable by lives store.',inline = False)
     await client.send_message(author,embed=embed)
-    await client.say('📨 Check DMs For Information')
+    await client.say(ctx.message.author.mention+'📨 Check DMs For Information')
 @client.command(pass_context = True)
 async def modhelp(ctx):
     author = ctx.message.author
