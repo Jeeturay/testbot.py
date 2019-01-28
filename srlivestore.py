@@ -845,7 +845,7 @@ async def buypoints():
            await client.say('**Thank you for using this command !** Please keep in mind that you can cancel this process at any time with ***`@cancel`*** . You can check our current prices in the #rate-info channel !  **__What do you want to buy__** **Instant points or deluxe?** If instant then type ***`@instant`*** if Deluxe:gem: then type ***`@deluxe`*** . Just write it to me :smiley: .')
 @client.command(pass_context=True)
 async def instant():
-           await client.say('**With these points you can generate all trivia lives without a phone number in just one second ! Pricing for instant points:  `1 point = 4 loco life / 1 point = 4 brain bazzi life / 1 point = 1 hq Life / 1 point = 4 SWOO life` . Under 100 lives: 12 rs each . Equal or over 100 lives: 10 rs each How many points do you want? Please type `@want <amount>`** .')
+           await client.say('**With these points you can generate all trivia lives without a phone number in just one second ! Pricing for instant points:  `1 point = 4 loco life / 1 point = 4 brain bazzi life / 1 point = 1 hq Life / 1 point = 4 SWOO life` . Under 100 lives: 8 rs each . Equal or over 100 lives: 7 rs each How many points do you want? Please type `@want <amount>`** .')
 @client.command(pass_context=True)	
 async def deluxe():
 	       await client.say('**You get daily points with the DELUXE :gem: option! You can use points to generate HQ lives without a phone number! Current price: amount per day in $ per week** *(For example:__**) 1 life per day --> 7 lives per week --> 63rs / $0.9/week ! 5 lives per day --> 35 lives per week --> 315rs / 4.5$/week ! 10 lives per day --> 70 lives per week --> 630rs /  9$/week* **__How many points do you want per day?__** **Please write it as** `@get <number>` .')
@@ -867,14 +867,14 @@ async def stock(ctx):
     embed.set_footer(text="©SR.LIVES STORE Made with ❤️ by S🅰🈂ℹL ®🅰N🅰#8333.")
 
     embed.set_author(name="SR.LIVES STORE Stock")
-    embed.add_field(name="Loco Lives", value="6872", inline=True)
-    embed.add_field(name="Bazzi Now Lives", value="678", inline=True)
-    embed.add_field(name="HQ Lives", value="227", inline=True)
-    embed.add_field(name="Swoo Lives", value="87", inline=True)	
+    embed.add_field(name="Loco Lives", value="272", inline=True)
+    embed.add_field(name="Bazzi Now Lives", value="49", inline=True)
+    embed.add_field(name="HQ Lives", value="27", inline=True)
+    embed.add_field(name="Swoo Lives", value="37", inline=True)	
     await client.say(embed=embed)	
 @client.command(pass_context=True)	
 async def week():
-	       await client.say('**__The price of /deluxe💎point is 10rs . So your amount will be × by rate or /point__** . Is that okay for you . *If okay then write it to me as `@ok`*.')
+	       await client.say('**__The price of /deluxe💎point is 8rs . So your amount will be × by rate or /point__** . Is that okay for you . *If okay then write it to me as `@ok`*.')
 @client.command(pass_context=True)	
 async def paytm():
 	       await client.say('Ok😉,**__HERE IS YOUR ONE TIME LINK:__** https://p-y.tm/MRuH-T0 to pay! You will get your order automatically once the payment is successful :smiley: **__Must send you screenshot in #sr-live-store-payment-proof in SR.LIVE STORE__** *Otherwise your points will not get added in your account* **__To join SR.LIVE STORE type `@help`__**😉 .')
